@@ -1,28 +1,60 @@
-<!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
   <title> Fashionclusive </title>
+  <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
   <style>
-  .overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(51,51,51,0.7);
-    z-index: 10;
-  }
+    .header {
+      position: fixed;
+      width: 100%;
+      height: 10%;
+      min-height: 30px;
+      left: 0;
+      top: 0;
+      background: rgba(255,255,255,1);
+      z-index: 11;
+    }  
+    .overlay {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      background: rgba(0,0,0,0.7);
+   
+    }
   </style>
 </head>
 <body>
+  <div class='header'> 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <div class="navbar-brand" href="#">
+        <div class="navbar-brand-pic">Fashionclusive</div>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="http://forms.google.com">Product Inquiry</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+</div>
+  </div>
   <div class='overlay'>
   
-      <!-- Place <div> tag where you want the feed to appear -->
-      <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-      <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+      <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag" style="alpha:0">Powered by Curator.io</a></div>
       <script type="text/javascript">
-      /* curator-feed-default-feed-layout */
       (function(){
       var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
       i.src = "https://cdn.curator.io/published/61c5af21-fe10-4901-9776-d960f70c98f7.js";
